@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Interview Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tech Interview Simulator</h1>
+        </header>
+        <main>
+            <div id="setup-area">
+                <select id="skill-select">
+                    <option value="">Select a skill</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="civil_engineering">Civil Engineering</option>
+                </select>
+                <button id="start-btn" class="btn btn-primary">Start Interview</button>
+            </div>
+            <div id="interview-area" class="hidden">
+                <div id="question-box">
+                    <h2>Interviewer:</h2>
+                    <p id="question"></p>
+                </div>
+                <div id="answer-box">
+                    <h2>Your Answer:</h2>
+                    <textarea id="answer" rows="4"></textarea>
+                    <div class="button-group">
+                        <button id="submit-btn" class="btn btn-secondary">Submit Answer</button>
+                        <button id="end-btn" class="btn btn-danger">End Interview</button>
+                    </div>
+                </div>
+            </div>
+            <div id="feedback-area" class="hidden">
+                <h2>Interview Feedback</h2>
+                <div id="feedback-content"></div>
+            </div>
+            <div id="conclusion-area" class="hidden">
+                <h2>Interview Conclusion</h2>
+                <div id="conclusion-content" class="conclusion-box"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
